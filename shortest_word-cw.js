@@ -16,3 +16,11 @@ function findShort(s){
   }
   return min
 }
+
+// A Better Solution!
+
+function findShort(s){
+  let holdArr = s.split(' ')
+  holdArr.sort((a, b) => a.length - b.length)
+  return holdArr[0].length
+}
