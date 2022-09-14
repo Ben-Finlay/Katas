@@ -12,7 +12,7 @@ function pigIt(str){
   for (word of engArr) {
     tempArr = word.split("")
     shift = tempArr.shift()
-    console.log(shift)
+
     if (shift === '!') {
       tempArr.push(shift)
     }
