@@ -42,7 +42,6 @@ function topThreeWords(text) {
   }
   
   values = Object.values(count).sort().reverse()
-  console.log('values', values, 'countOb,', count)
   
   for (let i = 0; i < 3; i++) {
     for (key in count) {
@@ -53,10 +52,6 @@ function topThreeWords(text) {
   }
   
   output = [... new Set(output)]
-  
-  console.log(output)
-  
-  
   
   while (output.length > 3) {
     output.pop()
